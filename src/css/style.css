@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Theme Swatches in Hex */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Tilt Neon", cursive;
+  background-color: #4F6F8C;
+  text-transform: uppercase;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #F7D6D2;
+  min-width: 50%;
+  min-height: 50vh;
+  border-radius: 10px;
+}
+.main-container h1 {
+  color: #3C5473;
+  padding: 20px;
+}
+.main-container .main-input-add-item {
+  padding: 20px;
+}
+.main-container .main-input-add-item input {
+  width: 25rem;
+  height: 1.8rem;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Tilt Neon", cursive;
+  border: 2px solid #94A69F;
+  outline: none;
+}
+.main-container .main-input-add-item button {
+  width: 5rem;
+  height: 1.8rem;
+  border-radius: 5px;
+  font-family: "Tilt Neon", cursive;
+  border: 2px solid #94A69F;
+  color: #3C5473;
+  cursor: pointer;
+  margin-left: -80px;
+}
+.main-container .main-input-add-item button:hover {
+  background-color: #94A69F;
+}
+.main-container .main-table table {
+  min-width: 100%;
+  table-layout: fixed;
+}
+.main-container .main-table table tbody tr td {
+  color: #3C5473;
+}
+.main-container .main-table table tbody tr td button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.main-container .main-button-delete button {
+  background-color: transparent;
+  width: 8rem;
+  height: 2rem;
+  color: red;
+  font-family: "Tilt Neon", cursive;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.modal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  min-height: 50vh;
+  min-width: 30%;
+  background-color: #F7D6D2;
+  color: #3C5473;
+  border-radius: 20px;
+  animation: zoomIn;
+  animation-duration: 1s;
+  padding: 20px;
+}
+.modal label {
+  font-weight: bold;
+}
+.modal input {
+  width: 15rem;
+  height: 1.8rem;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Tilt Neon", cursive;
+  border: 2px solid #94A69F;
+  outline: none;
+}
+.modal button {
+  width: 5rem;
+  height: 1.8rem;
+  border-radius: 5px;
+  font-family: "Tilt Neon", cursive;
+  border: 2px solid #94A69F;
+  color: #3C5473;
+  cursor: pointer;
+}
+.modal button:hover {
+  background-color: #94A69F;
+}
+
+@media (max-width: 825px) {
+  .main-container .main-input-add-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .main-container .main-input-add-item input {
+    width: 15rem;
+  }
+  .main-container .main-input-add-item button {
+    width: 7rem;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 620px) {
+  .main-container h1 {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

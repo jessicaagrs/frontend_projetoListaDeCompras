@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="main-container">
+        <div class="main-title">
+            <h1>Lista de Compras</h1>
+        </div>
+        <div class="main-input-add-item">
+            <input type="text" value="" placeholder="comprar..." id="inpItem">
+            <button>Enviar</button>
+        </div>
+        <div class="main-table">
+            <table id="table-items">
+                <!-- <tbody>
+                    <tr>
+                        <td>lorem</td>
+                        <td><button><img src="src/image/edit.svg" alt="editar o item da compra"></button></td>
+                        <td><button><img src="src/image/delete.svg" alt="deletar o item da compra"></button></td>
+                    </tr>
+                    <tr>
+                        <td>lorem</td>
+                        <td><button><img src="src/image/edit.svg" alt="editar o item da compra"></button></td>
+                        <td><button><img src="src/image/delete.svg" alt="deletar o item da compra"></button></td>
+                    </tr>
+                </tbody> -->
+
+            </table>
+        </div>
+        <div class="main-button-delete">
+            <button>Excluir todos</button>
+        </div>
+    </main>
+
+    <div class="modal">
+        <label for="">Digite um novo nome:</label>
+        <input type="text" id="inpEditItem">
+        <button id="saveNewItem">Salvar</button>
+    </div>
+
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

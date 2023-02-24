@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+/* Color Theme Swatches in Hex */
+$color-1-hex: #D7D7D9;
+$color-2-hex: #4F6F8C;
+$color-3-hex: #94A69F;
+$color-4-hex: #F7D6D2;
+$color-5-hex: #3C5473;
+$fontMaiuscula: uppercase;
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Tilt Neon', cursive;
+    background-color: $color-2-hex;
+    text-transform: $fontMaiuscula;
+
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: $color-4-hex;
+    min-width: 50%;
+    min-height: 50vh;
+    border-radius: 10px;
+
+    h1 {
+        color: $color-5-hex;
+        padding: 20px;
+    }
+
+    .main-input-add-item {
+        padding: 20px;
+
+        input {
+            width: 25rem;
+            height: 1.8rem;
+            text-align: center;
+            border-radius: 5px;
+            font-family: 'Tilt Neon', cursive;
+            border: 2px solid $color-3-hex;
+            outline: none;
+        }
+
+        button {
+            width: 5rem;
+            height: 1.8rem;
+            border-radius: 5px;
+            font-family: 'Tilt Neon', cursive;
+            border: 2px solid $color-3-hex;
+            color: $color-5-hex;
+            cursor: pointer;
+            margin-left: -80px;
+        }
+
+        button:hover {
+            background-color: $color-3-hex;
+        }
+
+    }
+
+    .main-table {
+        table {
+            min-width: 100%;
+            table-layout: fixed;
+        }
+
+        table tbody tr td {
+            color: $color-5-hex;
+
+            button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .main-button-delete {
+        button {
+            background-color: transparent;
+            width: 8rem;
+            height: 2rem;
+            color: red;
+            font-family: 'Tilt Neon', cursive;
+            border: none;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 15px;
+        }
+    }
+}
+
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-height: 50vh;
+    min-width: 30%;
+    background-color: $color-4-hex;
+    color: $color-5-hex;
+    border-radius: 20px;
+    animation: zoomIn;
+    animation-duration: 1s;
+    padding: 20px;
+
+
+    label {
+        font-weight: bold;
+    }
+
+    input {
+        width: 15rem;
+        height: 1.8rem;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Tilt Neon', cursive;
+        border: 2px solid $color-3-hex;
+        outline: none;
+    }
+
+    button {
+        width: 5rem;
+        height: 1.8rem;
+        border-radius: 5px;
+        font-family: 'Tilt Neon', cursive;
+        border: 2px solid $color-3-hex;
+        color: $color-5-hex;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: $color-3-hex;
+    }
+}
+
+@media (max-width:825px) {
+    .main-container {
+        .main-input-add-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            input {
+                width: 15rem;
+            }
+
+            button {
+                width: 7rem;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .main-container {
+        h1 {
+            font-size: 18px;
+        }
+    }
+}
