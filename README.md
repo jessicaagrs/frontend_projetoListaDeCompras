@@ -18,7 +18,7 @@ Esse projeto reúne alguns conhecimentos das linguagens mencionadas como:
 
 ## Como visualizar
 
-Acesse https://jessicaagrs.github.io/projeto_shopTech_javascript/
+Acesse https://jessicaagrs.github.io/projeto_listaDeCompras_javascript_sass/
 
 ## Tecnologias Utilizadas
 
